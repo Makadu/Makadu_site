@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Makadu</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<!-- web-font -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+		<!-- web-font -->
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- js -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55441558-1', 'auto');
+  ga('send', 'pageview');
+
+		</script>
+
+		<!-- start-smoth-scrolling -->
+        <meta charset="UTF-8">
+	</head>
+	<body>
+		<!-- header -->
+		<div class="head-bg">
+			<div class="header">
+				<!-- container -->
+				<div class="container">
+					<div class="head-logo">
+						<a href="#"><img src="images/logo-makadu2.png" alt="" /></a>
+					</div>
+					<!-- banner Slider starts Here -->
+					<script src="js/responsiveslides.min.js"></script>
+					 <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: false,
+                            timeout: 10000,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+					  </script>
+					<!--//End-slider-script -->
+					<div  id="top" class="callbacks_container">
+						<ul class="rslides" id="slider4">
+							<li>
+								<div class="head-info">
+									<span><img src="images/mobile.png" alt="" /> </span>
+									<div class="head-text">
+										<h1>Tenha a programação atualizada em tempo real!</h1>
+										<p>Você não precisa mais ficar carregando aquela programação em papel desatualizada por todo o evento.</p>
+								    </div>
+									<div class="mobile-device">
+										<img src="images/tela-geral.png" alt="" />
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</li>
+							<li>
+								<div class="head-info">
+									<span><img src="images/mobile.png" alt="" /> </span>
+									<div class="head-text">
+										<h1>Faça perguntas ao palestrante a qualquer momento!</h1>
+										<p>Se você é tímido ou pensou sua pergunta no meio da palestra, não precisa mais guardar o fim da apresentação. Faça a qualquer momento!</p>
+									</div>
+									<div class="mobile-device">
+										<img src="images/tela-detalhes.png" alt="" />
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</li><li>
+								<div class="head-info">
+									<span><img src="images/mobile.png" alt="" /> </span>
+									<div class="head-text">
+										<h1 allign="center">Faça o download dos slides com apenas alguns cliques.</h1>
+										<p>Gostou da palestra e quer dar uma olhada nos slides do palestrante quando chegar em casa? Você não precisa mais tirar fotos dos slides ou correr atrás do palestrante.</p>
+									</div>
+									<div class="mobile-device">
+										<img src="images/tela-prog.png" alt="" />
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearfix"> </div>
+						<!-- banner Slider Ends Here --> 
+					</div>
+
+					<div class="clearfix"> </div>
+				</div>
+				<!-- //container -->
+			</div>
+		</div>
+		<!-- header -->
+		<!-- welcome-note -->
+		<div class="welcome-note">
+            		<img src="./images/harcakan.png" height="100px">
+            		<p>Makadu é um aplicativo que ajuda a melhorar a qualidade de conteúdo e disseminação de conhecimento dentro de eventos.</p>
+            		<div class="welcome-side col-lg-4 col-lg-offset-2">
+        	   	    	<img src="./images/user.png">
+            			<p><br><strong>Para o participante:</strong></p>
+							<ul class="list-unstyled">
+								<li>Faça perguntas a qualquer momento;</li>
+								<li>Realize o download dos slides facilmente;</li>
+								<li>Tenha a programação sempre atualizada;</li>
+                                <li>Receba avisos da organização.</li>
+							</ul>
+					</div>
+					<div class="welcome-side col-lg-4">
+            		<img src="./images/setting.png">
+        			<p><br><strong>Para a organização:</strong></p>
+        				<ul class="list-unstyled">
+							<li>Reduza custos e gere receita;</li>
+							<li>Agilize o processo de perguntas;</li>
+							<li>Disponibilize os slides rapidamente;</li>
+							<li>Entenda melhor o seu evento.</li>
+						</ul>
+					</div>
+        </div>
+		<div class="clearfix"> </div>
+		</div>
+		<!-- welcome-note -->
+		<!-- app -->
+		<div class="app">
+			<!-- container -->
+			<div class="container">
+				<div class="app-left">
+					<h3>Baixe agora!</h3>
+					<p>A Makadu está disponível para Android e iOS. </br>Baixe o aplicativo, selecione o evento desejado e aproveite!</p>
+					<div class="row">		
+                    	<div class="col-lg-6 button-google">
+							<a href="https://play.google.com/store/apps/details?id=br.com.makadu.makaduevento" class="button hvr-grow" target="_blank">
+							<img alt="Get it on Google Play" src="./images/button-google.png" />
+						</div>
+						<div class="col-lg-6 button-apple">
+                    	<a href="https://itunes.apple.com/us/app/makadu/id923457992?mt=8" class="button hvr-grow" target="_blank">
+                    	<img alt="Get it on iTunes" src="./images/button-apple.png" /></a>
+                		</div>
+                	</div>
+                </div>
+            </div>
+            <div class="container">
+				<div class="app-left">
+          		     		<h3>Nós acreditamos em software livre</h3>
+            				<p>Por isso todo código da Makadu é aberto e está disponível no Github. </p>
+					<div class="row">    
+            				<div class="col-lg-12 button-git">
+            				<a href="https://github.com/Makadu/" class="button hvr-grow" style="float: center;" target="_blank">
+            				<img alt="Github Makadu" src="./images/github.png" height="75px" float="center" /></a>
+            				</div>
+
+            	</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+			<!-- //container -->
+		</div>
+		<!-- //app -->
+		<!-- app-bottom -->
+		<div class="app-bottom">
+			<!-- container -->
+			<div class="container">
+                <div class="app-left">
+                <h3>Alguns de nossos clientes</h3>
+                    </div>
+                </br>
+            </br>
+				<div class="bottom-grids">
+                        <div class="col-md-4 bottom-grid">
+                        <a href="http://www.inf.ufrgs.br/clioa/"  class="button hvr-grow"><img src="images/CLIOA.png" height="100px"alt="" /></a>
+						<div class="border"> </div>
+						<p>IX Congresso Latino-americano Interdisciplinar Orientado ao Adolescente (CLIOA)</p>
+					</div>
+                    <div class="col-md-4 bottom-grid">
+                        <a href="http://softwarelivre.org/fisl16" class="button hvr-grow"><img src="images/logo-fisl.png" height="100px" alt="" /></a>
+						<div class="border"> </div>
+						<p>16º Fórum Internacional do Software Livre (FISL16)</p>
+                    </div>
+					<div class="col-md-4 bottom-grid">
+                        <a href="http://www.plenariumcongressos.com.br/congressos/gineco2015/index.php" class="button hvr-grow"><img src="images/ginecologia.png" height="100px"alt="" /></a>
+						<div class="border"> </div>
+						<p>VII Simpósio Internacional de Ginecologia, Obstetrícia e Mastologia</p>
+					</div>
+					<div class="col-md-4 bottom-grid">
+                        <a href="http://www.jargus2014.eventize.com.br/" class="button hvr-grow"><img src="images/jargus.png" height="100px"alt="" /></a>
+						<div class="border"> </div>
+						<p>X Jornada da Associação Gaúcha de Ultrassonografia</p>
+					</div>                    
+					<div class="col-md-4 bottom-grid">
+                        <a href="http://www.irga.rs.gov.br/inicial" class="button hvr-grow"><img src="images/IRGA2.png" height="100px"alt="" /></a>
+						<div class="border"> </div>
+						<p>XII Conferência Internacional do Arroz para a América Latina e Caribe</p>
+					</div>
+					<div class="col-md-4 bottom-grid">
+                        <a href="http://www.fas-adce.com.br/" class="button hvr-grow"><img src="images/FAS.png" height="100px" alt=""  /></a>
+						<div class="border"> </div>
+						<p>4º Fórum ADCE para a Sustentabilidade</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		</div>
+		<!-- //contact -->
+<div class="contact-note">
+            <h2>Quer saber mais sobre a Makadu?</br></h2>
+            <p>Mande um e-mail para <a href="mailto:makadu@makadu.net" target="_top">makadu@makadu.net!</a></p>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<!-- container -->
+			<div class="row">
+					<div class="col-lg-4 col-lg-offset-5 ">
+			<img src="images/logo-makadu.png" height="100px" alt="" />
+</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //footer -->
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- content-Get-in-touch -->
+	</body>
+</html>
