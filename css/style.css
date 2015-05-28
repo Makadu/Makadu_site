@@ -370,6 +370,10 @@ ul.callbacks_tabs.callbacks2_tabs {
 	line-height: 1.5em;
 	height: auto;
 }
+
+.welcome-note ul{
+	margin-bottom: 2em;
+}
 .welcome-note li{
 	font-size: 20px;
 	color: #1E3435;
